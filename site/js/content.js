@@ -92,7 +92,7 @@ const CONTENT = {
         { src: "", alt: "App screen — post a service" },
       ],
       outcome:
-        "The final prototype tested well with early-majority users who previously avoided similar apps, validating the guided-flow approach for a future MVP.",
+        "The final prototype was shown but not tested with users due to time constraints. The next step would be to run usability tests and iterate on the design.",
     },
 
     {
@@ -119,14 +119,14 @@ const CONTENT = {
         "Confirmation clarity mattered more than visual polish.",
       ],
       process:
-        "I mapped the full service catalogue, then simplified the main flow to four steps: service, time, payment, confirmation — tested with two rounds of paper prototypes.",
+        "We mapped the full service catalogue, then simplified the main flow to four steps: service, time, payment, confirmation.",
       gallery: [
         { src: "", alt: "Flow diagram" },
         { src: "", alt: "Booking screen" },
         { src: "", alt: "Confirmation screen" },
       ],
       outcome:
-        "Currently refining high-fidelity screens; a full case study with usability testing results is coming soon.",
+        "Did not get to refining high-fidelity screens; a full case study with usability testing results would be the next step.",
     },
 
     {
@@ -153,7 +153,7 @@ const CONTENT = {
         "Consistency mattered more than novelty across touchpoints.",
       ],
       process:
-        "I explored ten logo directions, narrowed to three, then built a small system — type, color and photography direction — ready for upcoming collections.",
+        "I explored a couple of logo directions, narrowed it down to one, then built a small system — type, color and photography direction — ready for upcoming collections.",
       gallery: [
         { src: "", alt: "Logo exploration" },
         { src: "", alt: "Packaging mockup" },
