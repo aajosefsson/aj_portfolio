@@ -861,3 +861,36 @@ a:hover {
     transition: none !important;
   }
 }
+/* Låt grid-kolumner krympa under sitt innehålls "naturliga" bredd */
+.about__inner,
+.work__grid,
+.insight-grid,
+.project__gallery {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+@media (max-width: 620px) {
+  .timeline__row {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Låt text i flex-rader krympa/radbryta istället för att tvinga ut bredd */
+.card__row,
+.card__title,
+.footer__wordmark,
+.footer__wordmark span,
+.timeline__role,
+.timeline__org,
+.timeline__desc {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+/* Extra skyddsnät för alla rubriker/text */
+h1,
+h2,
+h3,
+p {
+  overflow-wrap: break-word;
+}
