@@ -591,13 +591,16 @@ a:hover {
   object-fit: contain;
 }
 .footer__wordmark span {
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: -0.01em;
   overflow-wrap: normal;
   word-break: keep-all;
   white-space: normal;
   font-size: clamp(20px, 8vw, 38px);
+  line-height: 1.1;
   text-align: center;
   max-width: 100%;
-  line-height: 1.1;
 }
 .footer__copy {
   font-size: 13px;
