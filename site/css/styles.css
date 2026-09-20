@@ -421,7 +421,15 @@ a:hover {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+}
+.card__title {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+.card__year {
+  flex-shrink: 0;
 }
 .card__title {
   font-family: var(--font-display);
