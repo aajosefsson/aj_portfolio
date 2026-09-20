@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Anthony Josefsson — UX/UI Designer</title>
+    <meta
+      name="description"
+      content="UX/UI designer in Falkenberg, Sweden. Turning complex problems into clear, human digital experiences."
+    />
+
+    <!-- Open Graph (how the link looks when shared) -->
+    <meta property="og:title" content="Anthony Josefsson — UX/UI Designer" />
+    <meta
+      property="og:description"
+      content="Turning complex problems into clear, human digital experiences."
+    />
+    <meta property="og:image" content="assets/me-whiteshirt.png" />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" href="assets/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!-- ============================================================
+     HEADER / NAV
+     ============================================================ -->
+    <header class="nav surface-coral" id="nav">
+      <a class="nav__brand" href="#home" aria-label="Home">
+        <img
+          class="nav__avatar"
+          src="assets/favicon.png"
+          alt="Anthony Josefsson"
+        />
+      </a>
+
+      <nav class="nav__links" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a class="btn btn--light" href="mailto:aajosefsson@hotmail.com"
+          >Contact</a
+        >
+      </nav>
+    </header>
+
+    <!-- ============================================================
+     PROJECT DETAIL — hidden until a project card is clicked.
+     Filled in by js/main.js. Content lives in js/content.js.
+     ============================================================ -->
+    <main class="project" id="project-detail" hidden></main>
+
+    <!-- ============================================================
+     HOME
+     ============================================================ -->
+    <main id="home-view">
+      <!-- HERO -->
+      <section class="hero surface-coral" id="home">
+        <div class="hero__inner">
+          <div class="hero__text">
+            <p class="eyebrow eyebrow--accent">
+              UX / UI Designer — Falkenberg, Sweden
+            </p>
+            <h1 class="hero__title">
+              Designing with <em>purpose</em>,<br />rooted in people.
+            </h1>
+            <p class="hero__lead">
+              I turn complex problems into clear, human digital experiences —
+              grounded in research and ten years of working directly with
+              people.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--dark" href="#projects">View my work</a>
+              <a class="btn btn--ghost" href="#resume">Resume</a>
+            </div>
+          </div>
+
+          <div class="hero__figure">
+            <img
+              src="assets/me-whiteshirt.png"
+              alt="Illustrated avatar of Anthony Josefsson"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="about" id="about">
+        <div class="about__inner">
+          <div class="about__aside">
+            <p class="eyebrow">About</p>
+            <h2 class="h2">Crafting good digital experiences.</h2>
+            <div class="about__photo">
+              <img src="assets/Profilbild.png" alt="Anthony Josefsson" />
+            </div>
+          </div>
+
+          <div class="about__body">
+            <p>
+              UX/UI designer with over ten years of experience in coaching,
+              education and leadership. That background gave me a strong
+              understanding of people's behaviors, needs and motivations —
+              something I now bring into user-centered design.
+            </p>
+            <p>
+              Through my studies and internships I've gained hands-on experience
+              in user research, prototyping, UI design and usability testing on
+              real projects with real users. I'm especially motivated by turning
+              insight into clear, practical design solutions.
+            </p>
+            <p>
+              Outside of work, life revolves around my family and functional
+              fitness — 14 years of coaching and competing taught me structure,
+              communication and how to break big goals into manageable steps.
+              Skills I bring straight into every design process.
+            </p>
+
+            <!-- Skill chips: rendered from content.js -->
+            <ul class="chips" id="skills-list"></ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="work" id="projects">
+        <div class="section-head">
+          <h2 class="h2">Selected work</h2>
+          <span class="eyebrow" id="work-count"></span>
+        </div>
+
+        <!-- Project cards: rendered from content.js -->
+        <div class="work__grid" id="projects-grid"></div>
+
+        <blockquote class="pull-quote">
+          “For me, great design is about making things feel clear, intuitive and
+          genuinely human.”
+        </blockquote>
+      </section>
+
+      <!-- RESUME -->
+      <section class="resume" id="resume">
+        <div class="resume__inner">
+          <div class="section-head">
+            <h2 class="h2">Resume</h2>
+            <a
+              class="btn btn--outline"
+              href="assets/CV_anthonyjosefsson.pdf"
+              download
+              >Download PDF ↓</a
+            >
+          </div>
+
+          <div class="resume__block">
+            <p class="eyebrow eyebrow--accent">Work experience</p>
+            <div class="timeline" id="experience-list"></div>
+          </div>
+
+          <div class="resume__block">
+            <p class="eyebrow eyebrow--accent">Education</p>
+            <div class="timeline" id="education-list"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================================================
+     FOOTER
+     ============================================================ -->
+    <footer class="footer surface-coral--deep">
+      <div class="footer__inner">
+        <div class="footer__cols">
+          <div>
+            <p class="eyebrow">Connect with me</p>
+            <div class="footer__social">
+              <a
+                href="https://www.linkedin.com/in/anthony-josefsson-142644330/"
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noopener"
+                >in</a
+              >
+              <a href="mailto:aajosefsson@hotmail.com" aria-label="Email">@</a>
+            </div>
+          </div>
+
+          <div class="footer__meta">
+            <div>
+              <p class="eyebrow">Navigate</p>
+              <nav class="footer__nav" aria-label="Footer navigation">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#resume">Resume</a>
+              </nav>
+            </div>
+            <div>
+              <p class="eyebrow">Location</p>
+              <p class="footer__location">Falkenberg, Sweden</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__sign">
+          <div class="footer__wordmark">
+            <img src="assets/me-whiteshirt2.png" alt="" />
+            <span>Anthony<br />Josefsson</span>
+          </div>
+          <p class="footer__copy">
+            © <span id="year"></span> — Anthony Josefsson
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- content first, then the renderer -->
+    <script src="js/content.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
