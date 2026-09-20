@@ -100,6 +100,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -111,6 +112,7 @@ body {
   line-height: 1.6;
   text-wrap: pretty;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 img {
@@ -572,6 +574,8 @@ a:hover {
   display: flex;
   align-items: flex-end;
   gap: 20px;
+  flex-wrap: wrap;
+  max-width: 100%;
 }
 .footer__wordmark img {
   width: 150px;
@@ -826,20 +830,27 @@ a:hover {
     justify-content: center;
     width: 100%;
   }
-  .nav__links > a:not(.btn) { font-size: 10px; }
+  .nav__links > a:not(.btn) {
+    font-size: 10px;
+  }
+  .footer__wordmark span {
+    font-size: 34px;
+  }
 }
 
-  .timeline__row {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-  .project__facts {
-    grid-template-columns: 1fr;
-  }
-  .footer__wordmark img {
-    width: 64px;
-    height: 92px;
-  }
+.timeline__row {
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.project__facts {
+  grid-template-columns: 1fr;
+}
+.footer__wordmark {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 100%;
 }
 
 @media (prefers-reduced-motion: reduce) {
