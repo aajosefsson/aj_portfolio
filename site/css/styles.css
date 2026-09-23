@@ -364,12 +364,11 @@ a:hover {
   border-radius: var(--radius);
   overflow: hidden;
   background: var(--cream-warm);
-  aspect-ratio: 3 / 4;
 }
 .about__photo img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 .about__body {
   padding-top: 6px;
@@ -381,11 +380,6 @@ a:hover {
 }
 
 /* --- Selected work --- */
-.work {
-  padding: 96px var(--gutter);
-  max-width: var(--max-wide);
-  margin: 0 auto;
-}
 .work__grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -798,11 +792,26 @@ a:hover {
 
   .about__inner {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 32px;
   }
+  .about__photo {
+    aspect-ratio: 16 / 9;
+  }
+
   .work__grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
   }
+  .card__media {
+    margin-bottom: 10px;
+  }
+  .card__title {
+    font-size: 15px;
+  }
+  .card__meta {
+    font-size: 12px;
+  }
+
   .insight-grid,
   .project__gallery {
     grid-template-columns: 1fr;
@@ -894,8 +903,6 @@ a:hover {
   }
 }
 /* Låt grid-kolumner krympa under sitt innehålls "naturliga" bredd */
-.about__inner,
-.work__grid,
 .insight-grid,
 .project__gallery {
   grid-template-columns: minmax(0, 1fr);
