@@ -13,15 +13,6 @@
 
 /* 1. FONTS ---------------------------------------------------------------- */
 
-@font-face {
-  font-family: "Akony";
-  src:
-    url("../fonts/AKONY.woff2") format("woff2"),
-    url("../fonts/AKONY.woff") format("woff");
-  font-weight: 400 800;
-  font-display: swap;
-}
-
 /* 2. DESIGN TOKENS -------------------------------------------------------- */
 
 :root {
@@ -42,7 +33,7 @@
   --hairline: rgba(36, 30, 26, 0.12);
 
   /* Type */
-  --font-display: "Akony", Georgia, serif;
+  --font-display: "Fraunces", Georgia, serif;
   --font-body: "Inter", system-ui, -apple-system, sans-serif;
 
   /* Layout */
