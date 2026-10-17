@@ -127,6 +127,7 @@
     140px 140px;
   color: var(--cream-light);
 }
+
 /* 3. BASE ----------------------------------------------------------------- */
 
 * {
@@ -664,7 +665,7 @@ p {
 .footer__copy {
   font-size: 13px;
   opacity: 0.75;
-  margin: 0;
+  margin: 40px 0 0;
   text-align: center;
 }
 
@@ -854,7 +855,10 @@ p {
     gap: 32px;
   }
   .about__photo {
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 4 / 5;
+  }
+  .about__photo img {
+    object-position: center top;
   }
 
   .work__grid {
@@ -959,14 +963,17 @@ p {
   }
 
   .footer__cols {
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 20px;
   }
   .footer__wordmark {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     gap: 12px;
   }
   .footer__wordmark img {
